@@ -4,6 +4,6 @@
 
 Both applications require access to API keys, and I've written a [tutorial](http://kaira.one/2016/03/01/Mandrill-And-Mailgun-API/) for installing these APIs.
 
-* <strong>iOS</strong> uses Mailgun
+* <strong>iOS</strong> uses [Mailgun](https://www.mailgun.com/)
 
-* <strong>Web</strong> uses Mandrill
+* <strong>Web</strong> uses [Mandrill](http://mandrill.com/?_ga=1.64018799.1797680672.1458339292)
