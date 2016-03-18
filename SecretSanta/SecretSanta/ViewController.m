@@ -42,11 +42,12 @@
 }
 
 - (void)sendMailgunEmail:(NSString*)email yourSecretSanta:(NSString*)name {
-    Mailgun *mailgun = [Mailgun clientWithDomain:@"" apiKey:@""];
+    Mailgun *mailgun = [Mailgun clientWithDomain:@"ENTER CLIENT DOMAIN"
+                                          apiKey:@"ENTER API KEY"];
     [mailgun sendMessageTo:email
-                      from:@""
-                   subject:@"Secret Santa - C4Q!"
-                      body:[NSString stringWithFormat:@"Your secret santa is %@", name]];
+                      from:@"ENTER SOURCE EMAIL"
+                   subject:@"ENTER SUBJECT HEADLINE"
+                      body:[NSString stringWithFormat:@"Woo! Your secret santa is %@", name]];
 }
 
 #pragma mark
