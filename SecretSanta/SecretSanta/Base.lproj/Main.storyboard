@@ -20,28 +20,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Santa Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcL-BJ-WeY">
-                                <rect key="frame" x="20" y="28" width="560" height="36"/>
+                                <rect key="frame" x="20" y="47" width="560" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.96072048611111116" green="0.96072048611111116" blue="0.96072048611111116" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Add participants " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTf-IB-bJx">
-                                <rect key="frame" x="20" y="79" width="560" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Add participants " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTf-IB-bJx">
+                                <rect key="frame" x="40" y="136" width="540" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HTf-IB-bJx" secondAttribute="height" multiplier="413:36" id="fKs-Iy-KIz"/>
+                                    <constraint firstAttribute="height" constant="36" id="jC6-G7-oJ9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <color key="textColor" red="0.96072048610000005" green="0.96072048610000005" blue="0.96072048610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Shuffle participants " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJh-9M-HFZ">
-                                <rect key="frame" x="20" y="123" width="560" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" red="0.96072048610000005" green="0.96072048610000005" blue="0.96072048610000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Email participants " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gz-Bz-mnC">
-                                <rect key="frame" x="20" y="167" width="560" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" red="0.96072048610000005" green="0.96072048610000005" blue="0.96072048610000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fKs-Iy-KIz"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUK-5f-ut5">
                                 <rect key="frame" x="251" y="482" width="116" height="30"/>
@@ -50,23 +47,53 @@
                                     <segue destination="gBN-99-A6P" kind="show" id="4cT-CR-D0H"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Shuffle participants " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-hg-8Xl">
+                                <rect key="frame" x="40" y="202" width="540" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pLw-hg-8Xl" secondAttribute="height" multiplier="413:36" id="QUM-PX-4GR"/>
+                                    <constraint firstAttribute="height" constant="36" id="Uo2-wg-zVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.96072048610000005" green="0.96072048610000005" blue="0.96072048610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QUM-PX-4GR"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Email participants " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojx-1v-8cp">
+                                <rect key="frame" x="40" y="271" width="540" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="HLp-PZ-Lvl"/>
+                                    <constraint firstAttribute="width" secondItem="ojx-1v-8cp" secondAttribute="height" multiplier="413:36" id="kWg-Wh-jbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.96072048610000005" green="0.96072048610000005" blue="0.96072048610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kWg-Wh-jbU"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.27311376069999999" blue="0.30194957259999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" id="0ex-oj-14X"/>
-                            <constraint firstItem="HTf-IB-bJx" firstAttribute="centerX" secondItem="r7S-V2-0zc" secondAttribute="centerX" id="3rU-pp-QNB"/>
-                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="centerX" secondItem="r7S-V2-0zc" secondAttribute="centerX" id="7Y2-tY-yQt"/>
-                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="top" secondItem="4X3-qJ-UES" secondAttribute="bottom" constant="8" id="E0q-ab-51s"/>
-                            <constraint firstItem="HTf-IB-bJx" firstAttribute="top" secondItem="OcL-BJ-WeY" secondAttribute="bottom" constant="15" id="IAD-kk-J7Q"/>
-                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="trailing" secondItem="r7S-V2-0zc" secondAttribute="trailingMargin" id="KhO-HH-VaS"/>
-                            <constraint firstItem="7Gz-Bz-mnC" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" id="apZ-33-3AN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RJh-9M-HFZ" secondAttribute="trailing" id="ckh-yx-7yn"/>
-                            <constraint firstItem="RJh-9M-HFZ" firstAttribute="top" secondItem="HTf-IB-bJx" secondAttribute="bottom" constant="8" id="gTD-7W-qr0"/>
-                            <constraint firstItem="7Gz-Bz-mnC" firstAttribute="top" secondItem="RJh-9M-HFZ" secondAttribute="bottom" constant="8" id="gX9-LT-ikq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7Gz-Bz-mnC" secondAttribute="trailing" id="h7N-UC-iZ6"/>
-                            <constraint firstItem="HTf-IB-bJx" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" id="hBC-Lz-Ww9"/>
-                            <constraint firstItem="HTf-IB-bJx" firstAttribute="trailing" secondItem="r7S-V2-0zc" secondAttribute="trailingMargin" id="nxX-s2-2yT"/>
-                            <constraint firstItem="RJh-9M-HFZ" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" id="wJ9-2N-Tuq"/>
+                            <constraint firstItem="ojx-1v-8cp" firstAttribute="top" secondItem="pLw-hg-8Xl" secondAttribute="bottom" constant="33" id="0Ep-Fw-AYw"/>
+                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="trailing" secondItem="HTf-IB-bJx" secondAttribute="trailing" id="1rx-X2-PeG"/>
+                            <constraint firstItem="pLw-hg-8Xl" firstAttribute="top" secondItem="HTf-IB-bJx" secondAttribute="bottom" constant="30" id="6gt-jD-IT7"/>
+                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" id="91p-IQ-BSC"/>
+                            <constraint firstItem="HTf-IB-bJx" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" constant="20" id="BBg-Kr-SZC"/>
+                            <constraint firstItem="OcL-BJ-WeY" firstAttribute="top" secondItem="4X3-qJ-UES" secondAttribute="bottom" constant="27" id="CYJ-Ik-cl4"/>
+                            <constraint firstItem="ojx-1v-8cp" firstAttribute="trailing" secondItem="r7S-V2-0zc" secondAttribute="trailingMargin" id="FeD-bA-efF"/>
+                            <constraint firstItem="HTf-IB-bJx" firstAttribute="trailing" secondItem="r7S-V2-0zc" secondAttribute="trailingMargin" id="GW3-8w-3LF"/>
+                            <constraint firstItem="HTf-IB-bJx" firstAttribute="top" secondItem="OcL-BJ-WeY" secondAttribute="bottom" constant="53" id="JgB-27-5fa"/>
+                            <constraint firstItem="pLw-hg-8Xl" firstAttribute="trailing" secondItem="r7S-V2-0zc" secondAttribute="trailingMargin" id="PR2-pB-d97"/>
+                            <constraint firstItem="pLw-hg-8Xl" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" constant="20" id="Sni-lT-cZ1"/>
+                            <constraint firstItem="ojx-1v-8cp" firstAttribute="top" secondItem="pLw-hg-8Xl" secondAttribute="bottom" constant="33" id="V7n-YJ-zge"/>
+                            <constraint firstItem="ojx-1v-8cp" firstAttribute="leading" secondItem="r7S-V2-0zc" secondAttribute="leadingMargin" constant="20" id="g3r-MB-aGK"/>
+                            <constraint firstItem="pLw-hg-8Xl" firstAttribute="top" secondItem="HTf-IB-bJx" secondAttribute="bottom" constant="30" id="x0S-uJ-Ew1"/>
                         </constraints>
                     </view>
                 </viewController>
