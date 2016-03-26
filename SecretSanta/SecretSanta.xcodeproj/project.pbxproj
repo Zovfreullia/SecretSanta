@@ -17,6 +17,7 @@
 		3DF93B1D1C220B75008AB1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF93B1B1C220B75008AB1D1 /* LaunchScreen.storyboard */; };
 		3DF93B281C220B75008AB1D1 /* SecretSantaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF93B271C220B75008AB1D1 /* SecretSantaTests.m */; };
 		3DF93B331C220B75008AB1D1 /* SecretSantaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF93B321C220B75008AB1D1 /* SecretSantaUITests.m */; };
+		3DFEB5381CA676E000E083E7 /* FistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEB5371CA676E000E083E7 /* FistViewController.m */; };
 		BD88F9E6FC07E068E9FF0F55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3755015A64A8177B73798A3D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		3DF93B2E1C220B75008AB1D1 /* SecretSantaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretSantaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF93B321C220B75008AB1D1 /* SecretSantaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretSantaUITests.m; sourceTree = "<group>"; };
 		3DF93B341C220B75008AB1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DFEB5361CA676E000E083E7 /* FistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FistViewController.h; sourceTree = "<group>"; };
+		3DFEB5371CA676E000E083E7 /* FistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FistViewController.m; sourceTree = "<group>"; };
 		C97FD0FCA0A2DDEEB0FEC7F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F0EB12ADF2C03270D1BF2CAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +130,8 @@
 				3DF93B1B1C220B75008AB1D1 /* LaunchScreen.storyboard */,
 				3DF93B1E1C220B75008AB1D1 /* Info.plist */,
 				3DF93B0D1C220B75008AB1D1 /* Supporting Files */,
+				3DFEB5361CA676E000E083E7 /* FistViewController.h */,
+				3DFEB5371CA676E000E083E7 /* FistViewController.m */,
 			);
 			path = SecretSanta;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 			files = (
 				3DF93B151C220B75008AB1D1 /* ViewController.m in Sources */,
 				3DF93B121C220B75008AB1D1 /* AppDelegate.m in Sources */,
+				3DFEB5381CA676E000E083E7 /* FistViewController.m in Sources */,
 				3DE1377B1C357A4300FF2B79 /* Person.m in Sources */,
 				3DF93B0F1C220B75008AB1D1 /* main.m in Sources */,
 				3DCDCE1C1C23686C00ED0FE6 /* DetailViewController.m in Sources */,
