@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DCDCE1C1C23686C00ED0FE6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDCE1B1C23686C00ED0FE6 /* DetailViewController.m */; };
+		3DD30BC31CBD5EE300553B8D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD30BC21CBD5EE300553B8D /* SystemConfiguration.framework */; };
+		3DD30BC51CBD5EE900553B8D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD30BC41CBD5EE900553B8D /* MobileCoreServices.framework */; };
 		3DE1377B1C357A4300FF2B79 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1377A1C357A4300FF2B79 /* Person.m */; };
 		3DF93B0F1C220B75008AB1D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF93B0E1C220B75008AB1D1 /* main.m */; };
 		3DF93B121C220B75008AB1D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF93B111C220B75008AB1D1 /* AppDelegate.m */; };
@@ -40,8 +41,8 @@
 
 /* Begin PBXFileReference section */
 		3755015A64A8177B73798A3D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DCDCE1A1C23686C00ED0FE6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		3DCDCE1B1C23686C00ED0FE6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3DD30BC21CBD5EE300553B8D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3DD30BC41CBD5EE900553B8D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		3DE137791C357A4300FF2B79 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3DE1377A1C357A4300FF2B79 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3DF93B0A1C220B75008AB1D1 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD30BC51CBD5EE900553B8D /* MobileCoreServices.framework in Frameworks */,
+				3DD30BC31CBD5EE300553B8D /* SystemConfiguration.framework in Frameworks */,
 				BD88F9E6FC07E068E9FF0F55 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,17 +124,15 @@
 				3DF93B111C220B75008AB1D1 /* AppDelegate.m */,
 				3DE137791C357A4300FF2B79 /* Person.h */,
 				3DE1377A1C357A4300FF2B79 /* Person.m */,
+				3DFEB5361CA676E000E083E7 /* FistViewController.h */,
+				3DFEB5371CA676E000E083E7 /* FistViewController.m */,
 				3DF93B131C220B75008AB1D1 /* ViewController.h */,
 				3DF93B141C220B75008AB1D1 /* ViewController.m */,
-				3DCDCE1A1C23686C00ED0FE6 /* DetailViewController.h */,
-				3DCDCE1B1C23686C00ED0FE6 /* DetailViewController.m */,
 				3DF93B161C220B75008AB1D1 /* Main.storyboard */,
 				3DF93B191C220B75008AB1D1 /* Assets.xcassets */,
 				3DF93B1B1C220B75008AB1D1 /* LaunchScreen.storyboard */,
 				3DF93B1E1C220B75008AB1D1 /* Info.plist */,
 				3DF93B0D1C220B75008AB1D1 /* Supporting Files */,
-				3DFEB5361CA676E000E083E7 /* FistViewController.h */,
-				3DFEB5371CA676E000E083E7 /* FistViewController.m */,
 			);
 			path = SecretSanta;
 			sourceTree = "<group>";
@@ -165,6 +166,8 @@
 		D2BC9B0879D293FEB8BDD7C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DD30BC41CBD5EE900553B8D /* MobileCoreServices.framework */,
+				3DD30BC21CBD5EE300553B8D /* SystemConfiguration.framework */,
 				3755015A64A8177B73798A3D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -350,7 +353,6 @@
 				3DFEB5381CA676E000E083E7 /* FistViewController.m in Sources */,
 				3DE1377B1C357A4300FF2B79 /* Person.m in Sources */,
 				3DF93B0F1C220B75008AB1D1 /* main.m in Sources */,
-				3DCDCE1C1C23686C00ED0FE6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -166,7 +166,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="96"/>
                                         <state key="normal" title="+">
-                                            <color key="titleColor" red="1" green="0.94778364310960805" blue="0.89233202151243063" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -201,9 +201,6 @@
                                                                 </label>
                                                             </subviews>
                                                         </tableViewCellContentView>
-                                                        <connections>
-                                                            <segue destination="tbZ-nw-jfE" kind="presentation" id="7AB-Yz-oZB"/>
-                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
@@ -249,6 +246,28 @@
                                             <action selector="shuffleButtonAction:" destination="gBN-99-A6P" eventType="touchUpInside" id="TGI-Il-jTQ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1i-wJ-WXY">
+                                        <rect key="frame" x="40" y="525" width="520" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.73108552630000001" blue="0.20723684210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="2Eu-UV-Nzu"/>
+                                            <constraint firstAttribute="height" constant="52" id="ftl-XI-6jP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                        <state key="normal" title="SEND">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2Eu-UV-Nzu"/>
+                                                <exclude reference="ftl-XI-6jP"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="sendPlayersTheirSecretSantaViaEmail:" destination="gBN-99-A6P" eventType="touchUpInside" id="TWu-pu-Srh"/>
+                                            <action selector="shuffleButtonAction:" destination="gBN-99-A6P" eventType="touchUpInside" id="TfB-wY-1JP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.27311376069999999" blue="0.30194957259999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -263,6 +282,7 @@
                                     <constraint firstItem="6Hg-KI-MUn" firstAttribute="top" secondItem="WCz-Hu-CRG" secondAttribute="top" constant="37" id="CYg-pm-Hz8"/>
                                     <constraint firstAttribute="trailing" secondItem="YfZ-ot-7Z6" secondAttribute="trailing" constant="40" id="Dn5-xz-ZyY"/>
                                     <constraint firstItem="YfZ-ot-7Z6" firstAttribute="top" secondItem="6Hg-KI-MUn" secondAttribute="bottom" id="Ezo-fb-Xua"/>
+                                    <constraint firstItem="M1i-wJ-WXY" firstAttribute="height" secondItem="YfZ-ot-7Z6" secondAttribute="height" id="GF9-Wt-Xlw"/>
                                     <constraint firstItem="rv9-rZ-sHB" firstAttribute="bottom" secondItem="6Hg-KI-MUn" secondAttribute="bottom" id="GGU-h7-gb7"/>
                                     <constraint firstAttribute="bottom" secondItem="YfZ-ot-7Z6" secondAttribute="bottom" constant="27" id="Gm0-uB-Vtq"/>
                                     <constraint firstItem="v6i-G3-aRr" firstAttribute="width" secondItem="rv9-rZ-sHB" secondAttribute="width" id="HWe-kh-9na"/>
@@ -289,22 +309,27 @@
                                     <constraint firstItem="v6i-G3-aRr" firstAttribute="height" secondItem="rv9-rZ-sHB" secondAttribute="height" id="bsR-94-jFv"/>
                                     <constraint firstAttribute="trailing" secondItem="6Hg-KI-MUn" secondAttribute="trailing" constant="40" id="bz0-55-Mq5"/>
                                     <constraint firstItem="zT5-xm-STY" firstAttribute="trailing" secondItem="6Hg-KI-MUn" secondAttribute="trailing" id="cQR-bs-oSS"/>
+                                    <constraint firstAttribute="bottom" secondItem="M1i-wJ-WXY" secondAttribute="bottom" constant="33" id="dIP-U1-KVo"/>
                                     <constraint firstAttribute="trailing" secondItem="zT5-xm-STY" secondAttribute="trailing" constant="40" id="dmS-79-P5e"/>
                                     <constraint firstItem="zT5-xm-STY" firstAttribute="centerX" secondItem="WCz-Hu-CRG" secondAttribute="centerX" id="fCo-gD-3St"/>
                                     <constraint firstItem="6Hg-KI-MUn" firstAttribute="top" secondItem="WCz-Hu-CRG" secondAttribute="top" constant="37" id="gBk-xp-ofI"/>
                                     <constraint firstItem="6Hg-KI-MUn" firstAttribute="leading" secondItem="v6i-G3-aRr" secondAttribute="trailing" constant="8" id="gRh-6S-BlP"/>
                                     <constraint firstItem="YfZ-ot-7Z6" firstAttribute="top" secondItem="zT5-xm-STY" secondAttribute="bottom" constant="4" id="mCc-dr-sed"/>
+                                    <constraint firstItem="M1i-wJ-WXY" firstAttribute="width" secondItem="YfZ-ot-7Z6" secondAttribute="width" id="oOL-LD-l8Y"/>
                                     <constraint firstAttribute="trailing" secondItem="zT5-xm-STY" secondAttribute="trailing" constant="8" id="p2h-ib-aDn"/>
                                     <constraint firstAttribute="trailing" secondItem="YfZ-ot-7Z6" secondAttribute="trailing" constant="40" id="pPg-28-2dZ"/>
                                     <constraint firstItem="zT5-xm-STY" firstAttribute="top" secondItem="6Hg-KI-MUn" secondAttribute="bottom" constant="18" id="pzN-yP-Wxg"/>
                                     <constraint firstItem="zT5-xm-STY" firstAttribute="leading" secondItem="YfZ-ot-7Z6" secondAttribute="leading" id="qq6-YT-YA5"/>
                                     <constraint firstAttribute="trailing" secondItem="6Hg-KI-MUn" secondAttribute="trailing" constant="40" id="rYs-T2-w4j"/>
+                                    <constraint firstItem="M1i-wJ-WXY" firstAttribute="leading" secondItem="WCz-Hu-CRG" secondAttribute="leading" constant="40" id="s7R-G3-M0A"/>
                                     <constraint firstItem="rv9-rZ-sHB" firstAttribute="top" secondItem="v6i-G3-aRr" secondAttribute="bottom" constant="8" id="tHi-Mh-3d5"/>
+                                    <constraint firstItem="M1i-wJ-WXY" firstAttribute="top" secondItem="zT5-xm-STY" secondAttribute="bottom" constant="4" id="tJi-6Y-vE8"/>
                                     <constraint firstAttribute="bottom" secondItem="zT5-xm-STY" secondAttribute="bottom" constant="79" id="uFw-k7-75w"/>
                                     <constraint firstItem="zT5-xm-STY" firstAttribute="top" secondItem="WCz-Hu-CRG" secondAttribute="top" constant="183" id="vDp-Vr-3kN"/>
                                     <constraint firstItem="zT5-xm-STY" firstAttribute="top" secondItem="WCz-Hu-CRG" secondAttribute="top" constant="183" id="vIt-Ht-hkr"/>
                                     <constraint firstAttribute="trailing" secondItem="zT5-xm-STY" secondAttribute="trailing" constant="40" id="wCv-Aw-WbR"/>
                                     <constraint firstItem="v6i-G3-aRr" firstAttribute="top" secondItem="WCz-Hu-CRG" secondAttribute="top" constant="37" id="wgX-bX-rLe"/>
+                                    <constraint firstAttribute="trailing" secondItem="M1i-wJ-WXY" secondAttribute="trailing" constant="40" id="znD-pj-bzs"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -346,6 +371,7 @@
                     <connections>
                         <outlet property="enterEmailField" destination="rv9-rZ-sHB" id="pgu-Ph-ht6"/>
                         <outlet property="enterNameField" destination="v6i-G3-aRr" id="PAG-s3-kmP"/>
+                        <outlet property="sendButton" destination="M1i-wJ-WXY" id="FoJ-vX-4Gi"/>
                         <outlet property="shuffleButton" destination="YfZ-ot-7Z6" id="dVD-4h-7hI"/>
                         <outlet property="tableViewSanta" destination="2lo-AT-Hx9" id="xj4-Pc-RjE"/>
                     </connections>
@@ -353,76 +379,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAY-eN-h0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="347" y="623"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="xVv-bv-pND">
-            <objects>
-                <viewController id="tbZ-nw-jfE" customClass="DetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uL8-td-zeu"/>
-                        <viewControllerLayoutGuide type="bottom" id="KMX-8u-utt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="05a-s5-5IC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cn-OF-ssL">
-                                <rect key="frame" x="40" y="183" width="520" height="234"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1Cn-OF-ssL" secondAttribute="height" multiplier="51:23" id="gQ4-de-Xzc"/>
-                                    <constraint firstAttribute="width" constant="100" id="gWY-Lj-iKQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gWY-Lj-iKQ"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bev-PO-JUn">
-                                <rect key="frame" x="250" y="472" width="100" height="38"/>
-                                <color key="backgroundColor" red="0.16433500150145153" green="0.60293981386633622" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Kvy-XU-er3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="D O N E">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="doneButtonAction:" destination="tbZ-nw-jfE" eventType="touchUpInside" id="D69-Zw-BWf"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bev-PO-JUn" firstAttribute="top" secondItem="1Cn-OF-ssL" secondAttribute="bottom" constant="150" id="0r5-P5-vev"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Cn-OF-ssL" secondAttribute="trailing" constant="20" id="1f1-yG-t1c"/>
-                            <constraint firstItem="bev-PO-JUn" firstAttribute="width" secondItem="1Cn-OF-ssL" secondAttribute="width" id="56J-E8-UKl"/>
-                            <constraint firstItem="KMX-8u-utt" firstAttribute="top" secondItem="bev-PO-JUn" secondAttribute="bottom" constant="90" id="J11-VY-NCT"/>
-                            <constraint firstItem="1Cn-OF-ssL" firstAttribute="centerX" secondItem="05a-s5-5IC" secondAttribute="centerX" id="NRv-3a-LmK"/>
-                            <constraint firstItem="1Cn-OF-ssL" firstAttribute="centerY" secondItem="05a-s5-5IC" secondAttribute="centerY" id="SSz-dU-c8a"/>
-                            <constraint firstItem="bev-PO-JUn" firstAttribute="centerX" secondItem="05a-s5-5IC" secondAttribute="centerX" id="pDT-Sc-JmN"/>
-                            <constraint firstItem="1Cn-OF-ssL" firstAttribute="leading" secondItem="05a-s5-5IC" secondAttribute="leadingMargin" constant="20" id="w4V-sH-AiU"/>
-                            <constraint firstItem="bev-PO-JUn" firstAttribute="width" secondItem="1Cn-OF-ssL" secondAttribute="width" id="zaf-t6-eYa"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0r5-P5-vev"/>
-                                <exclude reference="56J-E8-UKl"/>
-                                <exclude reference="zaf-t6-eYa"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="studentNameMatch" destination="1Cn-OF-ssL" id="PrQ-M8-PPI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gRA-9P-7hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1052" y="211"/>
         </scene>
     </scenes>
 </document>

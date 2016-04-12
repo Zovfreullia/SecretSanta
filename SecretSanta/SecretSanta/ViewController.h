@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <mailgun/mailgun.h>
-#import "DetailViewController.h"
 #import "Person.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
